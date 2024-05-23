@@ -10,7 +10,7 @@ import { MdEmail } from "react-icons/md";
 const Schedule = () => {
   return (
     <>
-      <div className="flex flex-col   w-full  h-screen bg-black/[0.96]  bg-grid-white/[0.02]   ">
+      <div className="flex flex-col  w-full h-full  bg-black/[0.96]  bg-grid-white/[0.02]  overflow-hidden ">
         <Navbar />
         <div
           className="text-4xl pb-5 md:text-6xl text-center 
@@ -19,7 +19,7 @@ const Schedule = () => {
           Agendar Consulta
         </div>
 
-        <InlineWidget url="https://calendly.com/birdsoftware/15min" />
+        <InlineWidget url="https://calendly.com/s-machadogoncalves/60min" />
 
         <div className="max-w-7xl w-full relative  flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
           <footer className="w-full pt-20 pb-10 text-white" id="contact">

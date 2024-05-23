@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import { Spotlight } from "@/components/ui/Spotlight";
 import Link from "next/link";
-import Image from "next/image";
 import SliderOne from "@/components/ui/Slider";
 import About from "@/components/About";
 import Services from "@/components/Services";

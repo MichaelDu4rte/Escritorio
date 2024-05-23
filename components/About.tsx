@@ -1,14 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-import { Lora } from "next/font/google";
-
-const font = Lora({
-  subsets: ["latin"],
-  weight: ["400"],
-});
-
-const logos = [
+const profile = [
   {
     image: "/images/people3.png",
   },
@@ -23,27 +16,26 @@ const About = () => {
         </div>
 
         <p className="mt-4 text-lg font-normal text-neutral-300 lg:max-w-[1200px] sm:max-w-lg text-center mx-auto">
-          Simone Gonçalves é formada pela Universidade da Região da Campanha
-          (URCAMP), com pós-graduação pelo Instituto de Desenvolvimento Cultural
-          (IDC), Universidade Estácio de Sá e MBA em Direito Imobiliário pela
-          Faculdade Legale. Ela também possui formação pelo Instituto de
-          Aperfeiçoamento em Gestão Legal (IAGL) e em Administração de
-          Condomínios e Síndico Profissional. Localizado em Porto Alegre/RS, o
-          Escritório Simone Gonçalves Advocacia adota o modelo de "boutique
-          jurídica", caracterizado pela alta especialização e atendimento
-          personalizado. O escritório foca na proteção jurisdicional em Direito
-          Imobiliário e Condominial, oferecendo soluções para problemas
-          existentes e advocacia preventiva. Utiliza tecnologia e flexibilidade
-          para oferecer serviços customizados às necessidades dos clientes e
-          parceiros.
+          Simone Gonçalves é formada pela Universidade da Região da Campanha,
+          com pós-graduação pelo Instituto de Desenvolvimento Cultural,
+          Universidade Estácio de Sá e MBA em Direito Imobiliário pela Faculdade
+          Legale. Ela também possui formação pelo Instituto de Aperfeiçoamento
+          em Gestão Legal e em Administração de Condomínios e Síndico
+          Profissional. Localizado em Porto Alegre/RS, o Escritório Simone
+          Gonçalves Advocacia adota o modelo de &quot;boutique jurídica&quot;,
+          caracterizado pela alta especialização e atendimento personalizado. O
+          escritório foca na proteção jurisdicional em Direito Imobiliário e
+          Condominial, oferecendo soluções para problemas existentes e advocacia
+          preventiva. Utiliza tecnologia e flexibilidade para oferecer serviços
+          customizados às necessidades dos clientes e parceiros.
         </p>
 
         <div className="flex items-center justify-center mx-auto cursor-pointer">
-          {logos.map((logo, i) => (
+          {profile.map((profile, i) => (
             <div key={i} className="p-4 md:p-20">
               <Image
                 priority
-                src={logo.image}
+                src={profile.image}
                 width={500}
                 height={500}
                 alt="logo"

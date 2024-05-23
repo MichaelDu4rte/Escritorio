@@ -22,17 +22,17 @@ export async function POST(req: Request) {
         port: 465,
         secure: true,
         auth: {
-          user: "michaelirvineduarte@gmail.com",
-          pass: "ilol sufh rkje wuah",
+          user: "s.machadogoncalves@gmail.com",
+          pass: "apja otos icpl dfwt",
         },
       });
 
       const mailOptions = {
         from: email,
-        to: "michaelirvineduarte@gmail.com",
-        subject: "Contact Form Submission",
+        to: "s.machadogoncalves@gmail.com",
+        subject: "Novo formulario preenchido em seu site...",
         html: `
-                    <h1>Contact Form</h1>
+                    <h1>Informações</h1>
                     <p>Nome: ${first_name} ${last_name}</p>
                     <p>Email: ${email}</p>
                     <p>Area de interesse: ${services}</p>
