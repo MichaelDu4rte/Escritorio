@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 
 import { Lora } from "next/font/google";
-import { cn } from "@/lib/utils";
 
 const font = Lora({
   subsets: ["latin"],
@@ -18,15 +17,12 @@ const logos = [
 const About = () => {
   return (
     <div>
-      <div className=" p-4   mx-auto relative z-10  w-full pt-20 md:pt-32">
-        <div
-          className="text-4xl md:pb-8 md:text-7xl text-center 
-        bg-clip-text text-transparent bg-gradient-to-b from-[#f9f4e5] to-[#cd9e80] bg-opacity-50"
-        >
+      <div className="p-4 mx-auto relative z-10 w-full pt-20 md:pt-32">
+        <div className="text-4xl md:pb-8 md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-[#f9f4e5] to-[#cd9e80] bg-opacity-50">
           Sobre <br /> SIMONE GONÇALVES
         </div>
 
-        <p className="mt-4 text-lg font-normal  text-neutral-300  lg:max-w-[1200px] sm:max-w-lg text-center mx-auto">
+        <p className="mt-4 text-lg font-normal text-neutral-300 lg:max-w-[1200px] sm:max-w-lg text-center mx-auto">
           Simone Gonçalves é formada pela Universidade da Região da Campanha
           (URCAMP), com pós-graduação pelo Instituto de Desenvolvimento Cultural
           (IDC), Universidade Estácio de Sá e MBA em Direito Imobiliário pela
@@ -42,7 +38,7 @@ const About = () => {
           parceiros.
         </p>
 
-        <div className="flex  items-center justify-center  mx-auto  cursor-pointer">
+        <div className="flex items-center justify-center mx-auto cursor-pointer">
           {logos.map((logo, i) => (
             <div key={i} className="p-4 md:p-20">
               <Image
