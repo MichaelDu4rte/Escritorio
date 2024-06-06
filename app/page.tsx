@@ -11,7 +11,9 @@ export default function Home() {
   return (
     <div className="w-full  md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.2] relative overflow-hidden">
       <Navbar></Navbar>
-      <Spotlight className="hidden md:flex left-96 " fill="#f9f4e5"></Spotlight>
+     
+      {/* <Spotlight className="hidden md:flex left-96 " fill="#f9f4e5"></Spotlight> */}
+
       <div
         id="home"
         className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-30 px-2"
